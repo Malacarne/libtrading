@@ -2,6 +2,7 @@
 all:
 #
 # Define WERROR=0 to disable -Werror.
+WERROR=0
 
 LIBTRADING-VERSION-FILE: .FORCE-LIBTRADING-VERSION-FILE
 	sh tools/gen-version-file
@@ -183,13 +184,13 @@ LIB_H += proto/fast_session.h
 LIB_H += proto/fix_message.h
 LIB_H += proto/fix_template.h
 LIB_H += proto/fix_session.h
-LIB_H += proto/cme_globex_fix.h
-LIB_H += proto/ice_os_fix.h
-LIB_H += proto/micex_fix.h
-LIB_H += proto/iex_fix.h
-LIB_H += proto/kcg_hotspot_fix.h
+# LIB_H += proto/cme_globex_fix.h
+# LIB_H += proto/ice_os_fix.h
+# LIB_H += proto/micex_fix.h
+# LIB_H += proto/iex_fix.h
+# LIB_H += proto/kcg_hotspot_fix.h
 LIB_H += proto/lse_itch_message.h
-LIB_H += proto/mbt_fix.h
+# LIB_H += proto/mbt_fix.h
 LIB_H += proto/mbt_quote_message.h
 LIB_H += proto/nasdaq_itch40_message.h
 LIB_H += proto/nasdaq_itch41_message.h
@@ -217,12 +218,12 @@ LIB_OBJS	+= lib/proto/fast_feed.o
 LIB_OBJS	+= lib/proto/fast_message.o
 LIB_OBJS	+= lib/proto/fast_session.o
 LIB_OBJS	+= lib/proto/fast_template.o
-LIB_OBJS	+= lib/proto/cme_globex_fix.o
-LIB_OBJS	+= lib/proto/ice_os_fix.o
-LIB_OBJS	+= lib/proto/micex_fix.o
-LIB_OBJS	+= lib/proto/iex_fix.o
-LIB_OBJS	+= lib/proto/kcg_hotspot_fix.o
-LIB_OBJS	+= lib/proto/mbt_fix.o
+# LIB_OBJS	+= lib/proto/cme_globex_fix.o
+# LIB_OBJS	+= lib/proto/ice_os_fix.o
+# LIB_OBJS	+= lib/proto/micex_fix.o
+# LIB_OBJS	+= lib/proto/iex_fix.o
+# LIB_OBJS	+= lib/proto/kcg_hotspot_fix.o
+# LIB_OBJS	+= lib/proto/mbt_fix.o
 LIB_OBJS	+= lib/proto/mbt_quote_message.o
 LIB_OBJS	+= lib/proto/nasdaq_itch40_message.o
 LIB_OBJS	+= lib/proto/nasdaq_itch41_message.o
@@ -234,12 +235,12 @@ LIB_OBJS	+= lib/proto/xdp_message.o
 LIB_OBJS	+= lib/proto/lse_itch_message.o
 LIB_OBJS	+= lib/stringencoders/modp_numtoa.o
 
-LIB_GEN_SRC	+= lib/proto/micex_fix.c
-LIB_GEN_SRC	+= lib/proto/iex_fix.c
-LIB_GEN_SRC	+= lib/proto/kcg_hotspot_fix.c
-LIB_GEN_SRC	+= lib/proto/mbt_fix.c
-LIB_GEN_SRC	+= lib/proto/cme_globex_fix.c
-LIB_GEN_SRC	+= lib/proto/ice_os_fix.c
+# LIB_GEN_SRC	+= lib/proto/micex_fix.c
+# LIB_GEN_SRC	+= lib/proto/iex_fix.c
+# LIB_GEN_SRC	+= lib/proto/kcg_hotspot_fix.c
+# LIB_GEN_SRC	+= lib/proto/mbt_fix.c
+# LIB_GEN_SRC	+= lib/proto/cme_globex_fix.c
+# LIB_GEN_SRC	+= lib/proto/ice_os_fix.c
 
 LIB_OBJS	+= $(COMPAT_OBJS)
 
